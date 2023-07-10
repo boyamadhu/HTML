@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        form{
+            margin: 100px auto;
+            width: 30%;
+        }
+        fieldset{
+            background-color: lightcyan;
+            border-radius: 10px;
+            padding: 10%;
+        }
+
+        input{
+            display: block;
+            margin-top: 8px;
+            border-radius: 10px;
+            padding: 8px;
+            width: 60%;
+        }
+
+        button{
+            width: 66%;
+            background-color: gold;
+            padding: 8px;
+            border-radius: 10px;
+            margin-top: 10px;
+            background-color: orange;
+        }
+        #nameError{
+            color: red;
+        }
+        #emailError{
+            color: red;
+        }
+        #passwordError{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="" id="form">
+        <fieldset>
+            <label for="">Name</label>
+            <input type="text" placeholder="Enter your name" id="input">
+            <span id="nameError"></span><br>
+            <label for="">Email</label>
+            <input type="email" placeholder="Enter your email" id="email">
+            <span id="emailError"></span><br>
+            <label for="">password</label>
+            <input type="password" placeholder="Enter password" id="password">
+            <label for="">ConfirmPasssword</label>
+            <input type="password" placeholder="ReEnter password" id="Cpassword">
+            <span id="passwordError"></span><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+
+    <script>
+        let nametag=document.getElementById("input");
+        let emailtag=document.getElementById("email");
+        let passwordtag=document.getElementById("password");
+        let Cpasswordtag=document.getElementById("Cpassword")
+        let nameError=document.getElementById("nameError")
+        let emailError=document.getElementById("emailError");
+        let passwordError=document.getElementById("passwordError")
+
+        let formtag=document.getElementById("form")
+            
+       
+            formtag.addEventListener("submit",(e)=>{
+                e.preventDefault();
+            let name=nametag.value;
+            let email=emailtag.value;
+            let password=passwordtag.value;
+            let Cpassword=Cpasswordtag.value;
+          
+            if( name.length=== "" || name.length<=3)
+            {
+                nameError.textContent="Enter valid name"
+            }
+            else if(email.length ==="" || email.length==4)
+            {
+                emailError.textContent="enter valid email"
+
+            }
+            else if(password.length !=Cpassword.length){
+                passwordError.textContent="password is mismatched"
+            }else if(password.length === Cpassword.length){
+                console.log(name,password,email)
+
+            }else {
+                console.log("plz resubmit form data")
+            }
+        })
+    </script>
+    
+</body>
+</html>
+</body>
+</html>

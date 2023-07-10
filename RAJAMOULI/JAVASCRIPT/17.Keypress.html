@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <p id="p"></p>
+    <script>
+        let input=document.getElementById("input")
+        let p=document.getElementById("p")
+        input.addEventListener("keypress",(e)=>{
+            if (e.key=="Enter"){
+                p.textContent=e.target.value;
+            }
+        })
+    </script>
+</body>
+</html>

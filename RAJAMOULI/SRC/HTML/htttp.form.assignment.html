@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SPECIAL FORM</title>
+	<style>
+		#a
+		{
+			width: 900px;
+		}
+		#b
+		{
+			width: 700px;
+		}
+		#c
+		{
+			width: 700px;
+		}
+		body
+		{
+			background-image: url(../IMAGES/NATURE1.JPG);
+		}
+		.aa
+		{
+			border-top-right-radius:30%;
+			border-bottom-left-radius: 30%;
+			color: black;
+			width: 120px;
+			border: 4px;
+			height: 30px;
+			background:linear-gradient(180deg,blue,white);
+		}
+		.aa:hover
+		{
+			cursor: pointer;
+			box-shadow: 20px 0px 20px red ;
+		}
+	</style>
+</head>
+<body>
+	<fieldset id="a" style="color:red;">
+		<legend>Personal Information</legend>
+		<form>
+			<table cellpadding="4px" cellspacing="4px">
+				<tr>
+					<td><label style="color:white;">First Name </label></td>
+					<td><input type="text" name=""/></td>
+					<td><label style="color:white;">Middle Name </label></td>
+					<td><input type="text"/></td>
+					<td><label style="color:white;">Last Name </label></td>
+					<td><input type="text" name=""/></td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">Father's Name </label></td>
+					<td><input type="text" name=""/></td>
+					<td><label style="color:white;">Mother's Name </label></td>
+					<td><input type="text" name=""/></td>	
+				</tr>
+				<tr>
+					<td><label style="color:white;">Current Address</label></td>
+					<td><textarea></textarea> </td>
+					<td><label style="color:white;">Permanent Address</label></td>
+					<td><textarea></textarea> </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">Phone Numbers</label> </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">Landline Number  </label></td>
+					<td><input type="text" name=""/></td>
+					<td><label style="color:white;">Mobile Number </label></td>
+					<td><input type="text" name=""/></td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">Date Of Birth </label></td>
+					<td><input type="text" name=""/></td>
+					<td><label style="color:white;">Place Of Birth </label></td>
+					<td><input type="text" name=""/></td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">Select Gender </label></td>
+					<td style="color:white;"><input type="radio" name="r1">Male </td>
+					<td style="color:white;"><input type="radio" name="r1">Female </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">Highest Qualification </label></td>
+					<td><input type="text" name=""/></td>
+					<td><label style="color:white;">Year Of Passing </label></td>
+					<td><input type="text" name=""/></td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">Languages Known</label> </td>
+					<td style="color:white;"><input type="checkbox" name="c1">Telugu</td>
+					<td style="color:white;"><input type="checkbox" name="c1">English</td>
+					<td style="color:white;"><input type="checkbox" name="c1">Hindi</td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">About Yourself</label> </td>
+					<td><textarea></textarea> </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">Nationality</label> </td>
+					<td><select>
+						<option>....America....</option>
+						<option>Russia</option>
+						<option>China</option>
+						<option>Iraq</option>
+						<option>Argentina</option>
+					</select> </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">Adhar Card Number </label></td>
+					<td><input type="Number" name=""/></td>
+					<td><label style="color:white;">PanCard Number </label></td>
+					<td><input type="Number" name=""/></td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+	<br>
+	<br>
+	<fieldset id="b">
+		<legend style="color:red;">Education Details</legend>
+		<form>
+			<table>
+				<tr>
+					<td><label style="color:white;">S.NO</label> </td>
+					<td><label style="color:white;"> Qualification</label> </td>
+					<td><label style="color:white;">Institute/University</label> </td>
+					<td><label style="color:white;">Year Of Passing</label> </td>
+					<td><label style="color:white;">Marks(%)</label> </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">1</label> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">2</label> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">3</label> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+	<br>
+	<br>
+	<fieldset id="c">
+		<legend style="color:white;">Work Experience</legend>
+		<form>
+			<table>
+				<tr>
+					<td><label style="color:white;">S.NO</label> </td>
+					<td><label style="color:white;">Company</label> </td>
+					<td><label style="color:white;">Work/Roles</label> </td>
+					<td><label style="color:white;">From Date</label> </td>
+					<td><label style="color:white;">To Date</label> </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">1</label> </td>
+					<td><textarea></textarea> </td>
+					<td><textarea></textarea> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">2</label> </td>
+					<td><textarea></textarea> </td>
+					<td><textarea></textarea> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">3</label> </td>
+					<td><textarea></textarea> </td>
+					<td><textarea></textarea> </td>
+					<td><input type="text" name=""> </td>
+					<td><input type="text" name=""> </td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+	<br>
+	<br>
+	<fieldset id="d">
+		<legend style="color:white;">Other Details</legend>
+		<form>
+			<table>
+				<tr>
+					<td style="color:white;"><label style="color:white;">Job Type</label> </td>
+					<td style="color:white;"><input type="radio" name="r1">Perminent </td>
+					<td style="color:white;"><input type="radio" name="r1">Contract </td>
+					<td style="color:white;"><input type="radio" name="r1">Other </td>
+				</tr>
+				<tr>
+					<td><label style="color:white;">Date of Joining</label> </td>
+					<td><input type="text" name=""> </td>
+					<td><label style="color:white;">Time Of Joining</label> </td>
+				</tr>
+				<tr>
+					<td style="color:white;"><label style="color:white;">Prefered Job Location</label> </td>
+					<td style="color:white;"><input type="radio" name="r1">Hyderabad </td>
+					<td style="color:white;"><input type="radio" name="r1">Bangalore </td>
+					<td style="color:white;"><input type="radio" name="r1">Other </td>
+				</tr>
+				<tr>
+					<td style="color:white;"><label style="color:white;">Waiting To Relocate to Hyderabad</label> </td>
+				</tr>
+				<tr>
+					<td colspan="3" style="color:white;"><input type="checkbox" name="">Iam Here Declaring That All The Above Mentioned Information Is True As Per My Knowledge  </td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2"><input class="aa" type="submit" name=""> </td>
+					<td align="center" colspan="2"><input class="aa" type="reset" name=""> </td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+</body>
+</html>

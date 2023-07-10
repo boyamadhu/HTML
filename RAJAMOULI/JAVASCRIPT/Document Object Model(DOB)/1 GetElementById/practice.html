@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <button onclick="sab()">click</button>
+
+    <div id="div">
+
+    </div>
+
+    <script>
+        let tag=document.getElementById("a")
+        let ta=document.getElementById("b")
+        let sab=()=>{
+            let tax=Number(tag.value);
+            let taxx=Number(ta.value);
+            let f=tax+taxx;
+            div.textContent=f
+        }
+    </script>
+</body>
+</html>

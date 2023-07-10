@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #a
+        {
+            width: 500px;
+            color: red;
+            text-align: center;
+            background-image: url(../IMAGES/NATURE1.JPG);
+            
+        }
+        #a>table
+        {
+            color: white;
+            text-align: center;
+            position: relative;
+            left: 100px;
+            
+        }
+        #aa
+        {
+            width: inherit;
+            text-align: center;
+            color: yellow;
+        }
+        .x
+        {
+            border-top-left-radius: 30%;
+            border-bottom-right-radius: 30%;
+            background-color: lightblue;
+            width: 60px;
+            height: 20px;
+        }
+        .x:hover
+        {
+            cursor: pointer;
+            border-radius: 20%;
+            background-color: aqua;
+            border: 3px;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset id="a">
+            <h2 id="aa">Best Forms</h2>
+            <table cellpadding="5px" cellspacing="5px">
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>Date of Birth</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>Email Id</label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile number</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" class="x">
+                        <input type="reset" class="x">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

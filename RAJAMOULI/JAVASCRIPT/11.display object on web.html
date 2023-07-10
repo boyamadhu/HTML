@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <dir id="div">
+    </dir>
+    <button onclick="sab(sam)">click</button>
+    <script>
+        let sam={
+            name:'madhu',
+            age:'21',
+            phno:'12334',
+        }
+
+        let div=document.getElementById("div")
+        let sab=(a)=>{
+            console.log(a);
+            let res=`<p>Name : ${a.name}</p><p>${a.age}</p><p>${a.phno}</p>`
+            div.innerHTML=res;
+        }
+    </script>
+</body>
+</html>

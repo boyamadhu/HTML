@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<style>
+		body
+		{
+			margin: 0px;
+		}
+		body>.MS
+		{
+			background-color: palegreen;
+			height: 600px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		#one
+		{
+			background: linear-gradient(red,yellow,brown);
+			width: 60px;
+			margin: 10px;
+			height: 60px;
+			border-radius: 100%;
+			animation: nvn 2s linear 0s infinite normal;
+			margin-left: 40px;
+		}
+		#two
+		{
+			background: linear-gradient(deepskyblue,deeppink,cyan);
+			width: 60px;
+			height: 60px;
+			margin: 10px;
+			border-radius: 100%;
+			animation: nvn 2s linear 0s infinite normal;
+			margin-left: 40px;
+		}
+		#three
+		{
+			background: linear-gradient(orange,gray,red);
+			width: 60px;
+			height: 60px;
+			margin: 10px;
+			border-radius: 100%;
+			animation: nvn 6s linear 0s infinite normal;
+			margin-left: 40px;
+		}
+		@keyframes nvn {
+			from{
+				transform:scale(1.0,1.0);
+			}
+			to{
+				transform:scale(2.0,2.0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="MS">
+		<div id="one"></div>
+		<div id="two"></div>
+		<div id="three"></div>
+	</div>
+</body>
+</html>

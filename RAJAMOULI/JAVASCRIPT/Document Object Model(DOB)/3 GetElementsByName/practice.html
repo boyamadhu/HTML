@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ghjkl</title>
+</head>
+<body>
+    <input type="checkbox" name="language" value="telugu">telugu
+    <input type="checkbox" name="language" value="odiya">odiya
+    <input type="checkbox" name="language" value="hindi">hindi
+    <input type="checkbox" name="language" value="english">english
+    <button onclick="sab()">click</button>
+
+    <script>
+        let sa=document.getElementsByName("language")
+
+        let sab=()=>{
+           sa.forEach(a => {
+                if (a.checked)
+                {
+                    console.log(a.value);
+                }
+           });
+        }
+    </script>
+</body>
+</html>

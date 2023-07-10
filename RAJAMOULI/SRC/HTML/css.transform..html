@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transforms</title>
+	<style>
+		div
+		{
+			width: 500px;
+			height: 270px;
+			margin:200px auto;
+			position: relative;
+			overflow: hidden;
+			border-radius: 20px;
+			box-shadow: 0 0 10px ;
+		}
+		div:hover
+		{
+			cursor: pointer;
+		}
+		div>img 
+		{
+			width: inherit;
+			height: inherit;
+			filter: grayscale(0%);
+			border-radius: inherit;
+			border: 2px solid black ;
+			transition: all 2s linear 0s;
+
+		}
+		div:hover>img
+		{
+			filter: grayscale(100%);
+			transform:translatey(-100%);
+		}
+		div>.a
+		{
+			position: absolute;
+			top: -200px;
+			left: 0px;
+			padding: 10px;
+			background: yellow;
+			transform: translateX(100%);
+			transition: all 2s linear 0s;
+		}
+		div:hover>.a
+		{
+			transform: translateX(0px);
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="../IMAGES/car.jpg" alt="image not found">
+		<div class="a">
+			<h3>jaguar :-</h3>
+			<p>asdfghjkl,mnbgfdfghjklytrdhjk,mnbvcsdfghjkljhgfdfggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</p>
+		</div>
+	</div>
+</body>
+</html>

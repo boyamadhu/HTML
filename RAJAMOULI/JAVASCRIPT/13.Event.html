@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">heloo</h1>
+    <button id="btn">click</button>
+
+    <script>
+        let head=document.querySelector("#head")
+        let btn=document.getElementById("btn")
+
+        btn.addEventListener('mouseover',(event)=>{
+            console.log(event);
+            btn.style.backgroundColor="red"
+            btn.style.color="white";
+    
+        },true)
+
+        btn.addEventListener("click",(event)=>{
+            head.style.color="red"
+        },true)
+        console.log(window)
+    </script>
+</body>
+</html>

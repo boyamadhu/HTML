@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Document</title>
+</head>
+<body>
+	<input type="radio" name="gender" value="male">male
+	<input type="radio" name="gender" value="female">female
+	<button onclick="sabi()">click</button>
+
+	<script>
+		let tags=document.getElementsByName("gender")
+		let sabi=()=>{
+			tags.forEach(element => {
+				if (element.checked){
+					console.log(element.value)
+				}
+			});
+		}
+		
+	</script>
+</body>
+</html>

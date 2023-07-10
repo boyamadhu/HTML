@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		div
+		{
+			width: 400px;
+			height: 350px;
+			margin:200px auto;
+			border-radius: 10px;
+			border-color: 10px solid black;
+			box-shadow: 0 0 10px black;
+			overflow: hidden;
+			position: relative;
+			
+		}
+		.a>img
+		{
+			width: inherit;
+			height: inherit;
+			filter: grayscale(100%);
+			border-radius: inherit;
+			border: 2px solid black ;
+			transition: all 1s linear 2s;
+
+		}
+		.a:hover
+		{
+			cursor: pointer;
+		}
+		.a:hover>img
+		{
+			filter: grayscale(0%);
+			transform: scale(1.4,1.4);
+		}
+		.a>.car
+		{
+			position: absolute;
+			background: url(../IMAGES/PRABHAS.JPG);
+			top: -200px;
+			left: 0px;
+			background-size: cover;
+			transition: all 1s linear 1s;
+		}
+		.a:hover>.car
+		{
+			transform: translateY(-100%);
+		}
+		.a>.left
+		{
+			position: absolute;
+			top:-200px;
+			left:0px;
+			background-color: yellow;
+			width: 50%;
+			border-radius: 10px 0px 0px 10px;
+			transition: all 1s linear 0s;
+			transform-origin: left;
+		}
+		.a>.right
+		{
+			position: absolute;
+			top: -200px;
+			left: 200px;
+			background-color: blue;
+			width: 50%;
+			border-radius: 0px 10px 10px 0px;
+			transition: all 1s linear 0s;
+			transform-origin: right;
+		}
+        .a:hover>.right{
+            transform:perspective(200px) rotateY(-90deg);
+        }
+        .a:hover>.left{
+            transform:perspective(200px) rotateY(90deg);
+        }
+	</style>
+</head>
+<body>
+	<div class="a">
+		<img src="../IMAGES/ANUSKA2.JPG">
+		<div class="car"></div>
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+</body>
+</html>

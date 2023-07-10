@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>image position</title>
+    <styles>
+   h1{
+    background-color:aqua;
+    color:red;
+   }
+     </styles>
+</head>
+<body>
+    <h1>css selector</h1> 
+</body>
+</html>

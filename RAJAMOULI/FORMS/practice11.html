@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amazon Prime Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+        body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    form {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin: 50px auto;
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: #0066c0;
+      border-radius: 3px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0050a8;
+    }
+
+      </style>
+</head>
+<body>
+	<form method="post" action="#" id="login-form">
+		<h2>Sign in to Amazon Prime</h2>
+		<label for="username">Username/Email:</label>
+		<input type="text" id="username" name="username" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Login">
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>

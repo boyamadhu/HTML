@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .head
+        {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        let h1=document.createElement("h1")
+        h1.textContent="fuckyou"
+        h1.style.color='blue'
+        h1.setAttribute("class",'head')
+        let body=document.body;
+        body.appendChild(h1)
+        console.log(body);
+    </script>
+</body>
+</html>

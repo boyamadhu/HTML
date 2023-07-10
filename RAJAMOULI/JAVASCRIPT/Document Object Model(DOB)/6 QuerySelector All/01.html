@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>inside div</p>
+        <p>inside div</p>
+        <section>
+            <p>inside div1</p>
+            <p>inside div2</p>
+        </section>
+        <p>inside div3</p>
+    </div>
+
+    <p>outside div1</p>
+    <p>outside div2</p>
+
+    <button onclick="sab()">click</button>
+
+    <script>
+        let tag=document.querySelectorAll("div>p")
+        console.log(tag)
+
+        let sab=()=>{
+            tag.forEach(element => {
+                element.style.color="red"
+                element.style.backgroundColor="solid blue"
+            });
+        }
+    </script>
+</body>
+</html>

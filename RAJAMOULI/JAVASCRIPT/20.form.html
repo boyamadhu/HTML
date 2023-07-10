@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        fieldset
+        {
+            width: 250px;
+            height: 350px;
+            margin: 100px auto;
+            border-radius: 8px;
+            background-color: orange;
+        }
+        fieldset:hover
+        {
+            box-shadow: 10px 10px 30px rgb(63, 169, 70);
+        }
+        div
+        {
+            position: relative;
+            top: 44px;
+            left: 40px;
+        }
+        input
+        {
+            display: block;
+            height: 25px;
+            border-radius: 8px;
+        }
+        button
+        {
+            margin-top: 18px;
+            width: 70px;
+            height: 20px;
+            border-radius: 15%;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <fieldset>
+            <div>
+                <label for="">Name</label>
+                <input type="text" placeholder="enter your name" id="input">
+                <span id="nameError"></span>
+                <br>
+                <label for="">Email</label>
+                <input type="text" placeholder="Enter your Mail" id="email">
+                <span id="emailError"></span>
+                <br>
+                <label for="">Password</label>
+                <input type="password" placeholder="Enter your password" id="pass">
+                <br>
+                <label for="">Cpassword</label>
+                <input type="password" placeholder="re-enter your password" id="Cpass">
+                <span id="passwordError"></span>
+                <button type="submit">Submit</button>
+            </div>
+
+            <script>
+                let nametag=document.getElementById("input")
+                let emailtag=document.getElementById("email")
+                let passwordtag=document.getElementById("pass")
+                let Cpasswordtag=document.getElementById("Cpass")
+                let nameError=document.getElementById("nameError")
+                let emailError=document.getElementById("emailError")
+                let passwordError=document.getElementById("passwordError")
+
+                let formtag=document.getElementById("form")
+
+                formtag.addEventListener("submit",(e)=>{
+                    e.preventDefault();
+                    let name=nametag.value;
+                    let email=emailtag.value;
+                    let password=passwordtag.value;
+                    let Cpassword=Cpasswordtag.value;
+
+                    if (name.length==="" || name.length<=3)
+                    {
+                        nameError.textContent="Enter Valid Name"
+                        nameError.style.color="red"
+                    }
+                    else if(email.length==="" || email.length==4)
+                    {
+                        emailError.textContent="Enter Valid Email"
+                        emailError.style.color="red"
+                    }
+                    else if(password.length!==Cpassword.length)
+                    {
+                        passwordError.textContent="Password is not Matched"
+                    }
+                    else
+                    {
+                        console.log(name,email,password)
+                    }
+                })
+
+            </script>
+        </fieldset>
+    </form>
+</body>
+</html>

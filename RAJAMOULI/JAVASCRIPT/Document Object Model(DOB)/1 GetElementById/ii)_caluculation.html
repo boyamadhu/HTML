@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="enter number" id="plus">
+    <input type="number" placeholder="enter number" id="plus">
+    <button onclick="add()">+</button>
+    <button onclick="minus()">-</button>
+
+    <div id="div">
+
+    </div>
+    <script>
+        let x=document.getElementById("plus");
+        let y=document.getElementById("plus");
+        let div=document.getElementById("div")
+        function add(){
+            let a=Number(x.value);
+            let b=Number(y.value);
+            div.textContent=a+b;
+            
+        }
+        function minus(){
+            let a=Number(x.value);
+            let b=Number(y.value);
+            div.textContent=a+b;
+        }
+    </script>
+</body>
+</html>

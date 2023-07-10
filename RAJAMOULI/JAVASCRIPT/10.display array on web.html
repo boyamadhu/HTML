@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+
+    </div>
+    <button onclick="sab(arr)">click</button>
+
+    <script>
+        arr=['a','b','c','d','e']
+        let div=document.getElementById("div")
+        
+        let sab=(arr)=>{
+            let ul=document.createElement("ul")
+            arr.forEach(element => {
+                let li=document.createElement("li")
+                li.textContent=element;
+                ul.appendChild(li)
+                div.appendChild(ul)
+            });
+        }
+    </script>
+</body>
+</html>

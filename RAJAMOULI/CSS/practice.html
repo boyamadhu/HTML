@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title></title>
+    <style>
+       body
+        {
+            margin: 0px;
+        }
+        body>.s
+        {
+            background-color: palegreen;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-image: url(../IMAGES/ANUSKA.JPG);
+            align-items: center;
+
+        }
+        .s>div
+        {
+            background-color: black;
+            width: 50px;
+            height: 50px;
+            margin: 30px;
+
+        }
+        .a
+        {
+            animation: nvn 1s linear 0s infinite normal;
+            
+        }
+        .b
+        {
+            animation: nvn 1s linear 0s infinite normal;
+        }
+        .c
+        {
+            animation: nvn 1s linear 0s infinite normal;
+        }
+       @keyframes nvn 
+       {
+            0%,100%
+            {
+                
+                background: linear-gradient(50deg,orange, red,green);
+            }
+            50%
+            {
+                background-color: black;
+                transform:  rotateY(90deg);
+                border-radius: 50%;
+            }
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="s">
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+    </div>
+</body>
+</html>

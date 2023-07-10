@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #a>table,#b>table
+        {
+            position: relative;
+            left: 50px;
+            text-align: center;
+        }
+        #a,#b
+        {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>settings</h1>
+        <fieldset id="a">
+            <legend>login details</legend>
+            <table cellspacing="5" celpading="5">
+                <tr>
+                    <td><label>Name : </label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>Email : </label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label>Password : </label></td>
+                    <td><input type="password"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset id="b">
+            <legend>Your feedback</legend>
+            <table cellspacing="5" cellpadding="5">
+                <tr>
+                    <td colspan="3">Please check all the emotions that apply to you</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>Angry</label></td>
+                    <td><input type="radio" name="r1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>Sad</label></td>
+                    <td><input type="radio" name="r1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>Happy</label></td>
+                    <td><input type="radio" name="r1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label>Ambivalent</label></td>
+                    <td><input type="radio" name="r1"></td>
+                </tr>
+                <tr>
+                    <td>How you Satisfied with our Service</td>
+                </tr>
+                <tr>
+                    <td colspan="2">very Satisfied</td>
+                    <td><input type="radio" name="r1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> Satisfied</td>
+                    <td><input type="radio" name="r1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Not Satisfied</td>
+                    <td><input type="radio" name="r1"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

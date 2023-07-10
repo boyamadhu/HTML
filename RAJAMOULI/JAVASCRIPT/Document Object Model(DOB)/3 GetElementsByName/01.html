@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="gender" value="male">male
+    <input type="radio" name="gender" value="male">female
+
+    <button onclick="madhu()">click</button>
+
+    <script>
+        let tags=document.getElementsByName("gender")
+       let madhu=()=>{
+        tags.forEach(a => {
+            console.log(a.value)
+            if (a.checked){
+                console.log(a.value)
+            }
+        });
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>student marks</title>
+    <script>
+        let student=prompt('enter name')
+        let su1=Number(prompt('enter marks'))
+        let su2=Number(prompt('enter marks'))
+        let su3=Number(prompt('enter marks'))
+        let su4=Number(prompt('enter marks'))
+        let total=su1+su2+su3+su4;
+        let x=Math.trunc(total/4)
+
+        function madhu()
+        {
+            if (su1<35||su2<35||su3<35||su4<35)
+            {
+                console.log(`${student} is failed`)
+            }
+             else if (su1>=35&&su2>=35&&su3>=35&&su4>=35)
+            {
+                console.log(`${student} is passed with ${x}%`)
+                if (x>=90)
+                console.log('GRADE:- A+');
+                if (x>=80&&x<90)
+                console.log('GRADE:- A');
+                if (x>=70&&x<80)
+                console.log('GRADE:- B+');
+                if (x>=60&&x<70)
+                console.log('GRADE:- B');
+                if (x>=50&&x<60)
+                console.log('GRADE:- C+');
+                if (x>=40&&x<50)
+                console.log('GRADE:- C');
+                if (x>=35&&x<40)
+                console.log('GRADE:- D');
+            }
+        }
+        madhu();
+    </script>
+</head>
+<body>
+    <h1>hello</h1>
+</body>
+</html>

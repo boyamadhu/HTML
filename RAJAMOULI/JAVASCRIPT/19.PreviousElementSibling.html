@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>insta</li>
+            <li>facebook</li>
+            <li id="pre">wat2news</li>
+            <li>youtube</li>
+        </ul>
+    </div>
+    <button id="btn">click</button>
+
+        <script>
+            let li=document.getElementById("pre")
+            let btn=document.getElementById("btn")
+
+            btn.addEventListener("click",()=>{
+                let face=li.previousElementSibling;
+                face.style.color="red"
+                let insta=face.previousElementSibling;
+                insta.style.color="blue"
+            })
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body
+        {
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="list">apple</li>
+        <li class="list">orange</li>
+        <li class="list">banana</li>
+        <li class="list">bongulo chicken</li>
+
+        <button onclick="madhu()">click</button>
+
+    </ul>
+    <script>
+        let b=document.getElementsByClassName("list")
+       let  madhu=()=>{
+            for (let a of b)
+            {
+                console.log(a.textContent)
+            }
+            b[2].style.color="blue"
+            b[0].style.boxShadow=" 50px"
+        }
+        
+            
+    </script>
+</body>
+</html>
